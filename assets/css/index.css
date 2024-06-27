@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex: 1; 
+}
+
+.btn {
+    width: 48%;
+}
+
+.btn-clean {
+    border-radius: 1vh;
+    border-color: #5D04D9;
+    width: 40%;
+}
+
+.btn-send {
+    border-radius: 1vh;
+    background-color: #5D04D9;
+    color: aliceblue;
+    width: 40%;
+}

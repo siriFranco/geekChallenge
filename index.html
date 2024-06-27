@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Geek</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+</head>
+<body>
+    <div class="main-content">
+
+        <nav class="navbar">
+            <img src="./assets/img/pixel-heart.png" alt="">
+            <img src="./assets/img/pixel-heart.png" alt="">
+            <img src="./assets/img/pixel-heart.png" alt="">
+            <h1>Shop Geek</h1>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 order-md-2 text-center"> 
+                    <h2>Agregar producto:</h2>
+                    <form id="productForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Nombre del producto</label>
+                            <input type="text" class="form-control" id="productName" name="productName" pattern="[a-zA-Z\s]{1,30}" required>
+                            <div class="invalid-feedback">
+                                El nombre debe tener al menos un carácter de tipo letra y un máximo de 30 caracteres.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Precio del producto</label>
+                            <input type="number" class="form-control" id="productPrice" name="productPrice" max="999999" required>
+                            <div class="invalid-feedback">
+                                El precio debe ser un valor numérico y no debe exceder las 6 cifras.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage" class="form-label">Imagen del producto</label>
+                            <input type="file" class="form-control" id="productImage" name="productImage" accept="image/*" required>
+                            <div class="invalid-feedback">
+                                Por favor, cargue una imagen del producto.
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn-clean" onclick="clearForm()">Limpiar</button>
+                            <button type="submit" class="btn-send">Enviar</button>
+                        </div>
+                    </form>
+                    <div>
+
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 order-md-1 text-center"> 
+                    <h2>Mis productos</h2>
+                    <div>
+
+                        <p>
+                            “No se han agregado productos”
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p style="font-size: larger;">Shop Geek</p>
+        <p>Desarrollado por Siria Franco
+            <br> 
+            Alura LATAM 2024
+        </p>
+    </footer>
+</body>
+
+<!-- Js -->
+<script src="./assets/js/index.js"></script>
+
+<!-- Loading Navbar and Footer with Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

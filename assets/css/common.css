@@ -1,0 +1,41 @@
+h1 {
+    font-family: "VT323", monospace;
+    font-weight: 100px;
+}
+
+h2 {
+    font-family: "VT323", monospace;
+    font-weight: 100px;
+    margin-top: 2vh;
+
+}
+
+p {
+    font-family: "VT323", monospace;
+    font-weight: 100px;
+    margin-top: 2vh;
+}
+
+button {
+    font-family: "VT323", monospace;
+    font-weight: 100px;
+    margin-top: 2vh;
+}
+
+div label{
+    font-family: "VT323", monospace;
+    font-weight: 100px;
+    margin-top: 2vh;
+} 
+
+.invalid-feedback {
+    font-family: "VT323", monospace;
+    font-weight: 200px;
+    margin-top: 2vh;
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
